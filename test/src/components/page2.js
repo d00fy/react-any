@@ -8,37 +8,37 @@ let group_num = 1;
 class Page2 extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
-    this.state = {
-      page2: [
-        [],
-        {
-          group: "自分との会話中...",
-          choice: [
-            "つま先はあなたを向いてますか？",
-            "視線はあなたを捉えていますか？",
-            "口数は多いですか？"
-          ]
-        },
-        {
-          group: "他人との会話中...",
-          choice: [
-            "つま先はあなたを向いてますか？",
-            "視線はあなたを捉えていますか？",
-            "口数は多いですか？"
-          ]
-        }
-      ]
-    };
+    // this.handleClick = this.handleClick.bind(this);
+    // this.state = {
+    //   page2: [
+    //     [],
+    //     {
+    //       group: "自分との会話中...",
+    //       choice: [
+    //         "つま先はあなたを向いてますか？",
+    //         "視線はあなたを捉えていますか？",
+    //         "口数は多いですか？"
+    //       ]
+    //     },
+    //     {
+    //       group: "他人との会話中...",
+    //       choice: [
+    //         "つま先はあなたを向いてますか？",
+    //         "視線はあなたを捉えていますか？",
+    //         "口数は多いですか？"
+    //       ]
+    //     }
+    //   ]
+    // };
   }
 
-  handleClick(e) {
-    const val = e.target.value;
-    ans_count++;
-    this.setState(prevState => {
-      return (prevState.page2[0][ans_count] = val);
-    });
-  }
+  // handleClick(e) {
+  //   const val = e.target.value;
+  //   ans_count++;
+  //   this.setState(prevState => {
+  //     return (prevState.page2[0][ans_count] = val);
+  //   });
+  // }
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log(this.state.page2[0]);
